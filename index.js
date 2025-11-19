@@ -1,8 +1,23 @@
-let name = "yascarrao"
-let xp = 5005
+let name = "Yas"
+let xp = 5011
+let level = ""
 
-switch (xp) {
-    case 5000:
-        console.log("Ferro");
-        break;
+if (xp < 1000) {
+    level = "Ferro";
+} else if (xp < 2000) {
+    level = "Bronze";
+} else if (xp < 5000) {
+    level = "Prata";
+} else if (xp < 7000) {
+    level = "Ouro";
+} else if (xp < 8000) {
+    level = "Platina";
+} else if (xp < 9000) {
+    level = "Ascendente";
+} else if (xp < 10000) {
+    level = "Imortal";
+} else if (xp > 10000) {
+    level = "Radiante";
 }
+
+console.log("O Herói de nome " + name + " está no nível " + level)
